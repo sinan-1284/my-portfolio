@@ -1,0 +1,33 @@
+---
+title: "Automatic Fire Extinguisher System"
+publishedAt: "2025-05-17"
+summary: "Designed an automatic fire detection and extinguisher system using ESP8266, flame sensor, and relay-controlled pump. The system detects fire early and activates a mini water pump to suppress flames, while sending instant alerts via Wi-Fi. Ideal for compact areas like server rooms or kitchens."
+images:
+  - "/images/projects/project-01/fire.jpeg"
+team:
+  - name: "Mohammed Sinan A R"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/company/once-ui/"
+---
+## Overview
+
+The Automatic Fire Extinguisher System is an IoT-based prototype developed to prevent small-scale fire hazards automatically. It uses a flame sensor to detect fire and activates a water pump through a relay module to suppress the flames. Built using affordable hardware components, it’s ideal for areas like kitchens, server racks, or labs where quick suppression is critical. The system can also send alerts over Wi-Fi to notify the user in real time.
+
+## Key Features
+
+- **Automatic Fire Detection**: Flame sensor detects fire or abnormal temperature rise.
+- **Auto-Extinguish Mechanism**:  Relay module activates a DC water pump or CO₂ sprayer.
+- **Real-Time Alerts**: Sends notifications via Wi-Fi using Telegram Bot, IFTTT, or Firebasee.
+- **Manual Override Option**: Optional switch or app control to activate extinguisher remotely.
+- **Compact & Low Power**: Designed for small enclosures or micro-environments.
+
+## Technologies Used
+
+Hardware: Arduino, Flame Sensor, Relay Module, DC Pump, Buzzer, LEDs
+Software: Arduino IDE
+Cloud/Protocols: Wi-Fi (HTTP) ,Firebase (for alerts)
+
+## Challenges and Learnings
+
+This project presented challenges in ensuring fast flame detection without false triggers from ambient light sources. Calibrating the sensor and tuning the pump activation delay were critical. I learned to optimize ESP8266 response times, integrate real-time cloud alerts, and design a reliable automatic control loop for safety-critical systems.

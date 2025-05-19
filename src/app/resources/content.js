@@ -6,16 +6,16 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Iot Engineer",
-  avatar: "/images/profilePic.jpg",
+  role: "IoT Engineer",
+  avatar: "/images/avatar.jpg",
   email: "mhdsinan1284@gmail.com",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Malayalam"], // optional: Leave the array empty if you don't want to display languages
+  languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}'s Email</>,
   description: (
     <>
       Software engineer passionate about embedded systems, IoT , robotics, coding, automation, AI, and exploring emerging tech innovation
@@ -54,16 +54,15 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Innovative Software Engineer Driving Embedded Systems, IoT, and Emerging Tech Solutions</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Tempro</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/tempro",
   },
   subline: (
     <>
-      I'm Sinan, a Iot engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Sinan, Passionate about creating, teaching, and evolving with technology.
     </>
   ),
 };
@@ -98,41 +97,34 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
+        company: "NextBot Labs",
+        timeframe: "2025 - Present",
+        role: "Founder, CEO",
+        achievements: [
+          <>
+            Delivered hands-on IoT and robotics training to high school and college students across multiple institutions.
+          </>,
+          <>
+           Collaborated with schools and colleges to conduct certified workshops and bootcamps.
+          </>,
+          <>
+           Led interactive, curriculum-aligned sessions covering Arduino, IoT, and robotics fundamentals with real-time demos.</>
+        ],
+        images: [],
+      },
+       {
         company: "Curiosity Weekends",
         timeframe: "2024 - Present",
         role: "Co-founder,Senior Iot Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+           Enabled over 100 students to build their first IoT and robotics projects through hands-on workshops and mentorship.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+           provided young innovators with space, tools, and guidance to build and develop their tech projects.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+           Collaborated with schools and colleges to introduce practical tech education through workshops and project-based learning.
           </>,
         ],
         images: [],
@@ -196,7 +188,7 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about ME",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route

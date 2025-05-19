@@ -1,0 +1,38 @@
+---
+title: "Smart Home"
+publishedAt: "2025-01-04"
+summary: "Developed a smartphone-controlled IoT-based smart home system using ESP8266. Integrated fire, gas, and motion sensors for real-time safety alerts. Enabled remote appliance control via a mobile app and visualized live sensor data on the cloud using ThingSpeak or Firebase"
+images:
+  - "/images/projects/project-01/smarthome.png"
+team:
+  - name: "Mohammed Sinan A R"
+    role: "SoftwarAe Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/company/once-ui/"
+---
+
+## Overview
+
+ Smart Home IoT System is a prototype developed to enhance household safety and automation using affordable IoT hardware. The system enables users to remotely control home appliances via smartphone and get real-time alerts for fire, gas leaks, and unauthorized motion, thereby ensuring both convenience and security.
+
+
+## Key Features
+
+- **Fire & Gas Detection**: Flame and MQ-2 gas sensors alert users of emergencies.
+- **Motion Detection**: PIR sensor detects intrusions and sends instant alerts.
+- **Mobile App Control**: Appliances (lights, fan, etc.) are remotely controlled via a custom Android app.
+- **Real-Time Alerts**: Notifications via Wi-Fi using IFTTT, Telegram Bot, or Firebase.
+- **Cloud Dashboard**: Live sensor data visualization and history tracking using ThingSpeak or Firebase.
+- **Energy Monitoring**: Integration of ACS712 sensor to track power consumption.
+
+## Technologies Used
+
+- **Hardware**: ESP8266 NodeMCU, Flame Sensor, MQ-2 Gas Sensor, PIR Sensor, ACS712 (optional), Relay Module, LEDs
+- **Software**: Arduino IDE,  Android Studio
+- **Protocols**: HTTP, MQTT 
+- **Cloud Platforms**: ThingSpeak, Firebase
+- **Other Tools**: Fritzing (circuit design), IFTTT or Twilio (alerts)
+
+## Challenges and Learnings
+
+During the development of this project, I faced challenges such as ensuring stable Wi-Fi connectivity with the ESP8266 and minimizing false triggers from gas and motion sensors. Designing a user-friendly mobile interface taught me the importance of intuitive UX in IoT applications. I also gained experience in cloud integration, real-time data visualization, and the importance of securing IoT communications for safety-critical systems
