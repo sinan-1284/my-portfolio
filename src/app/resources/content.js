@@ -9,8 +9,8 @@ const person = {
   role: "IoT Engineer",
   avatar: "/images/avatar.jpg",
   email: "mhdsinan1284@gmail.com",
-  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: [], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Kolkata",
+  languages: [],
 };
 
 const newsletter = {
@@ -24,9 +24,7 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  {
+    {
     name: "GitHub",
     icon: "github",
     link: "https://github.com/sinan-1284",
@@ -93,7 +91,7 @@ const about = {
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
@@ -101,85 +99,112 @@ const about = {
         timeframe: "2025 - Present",
         role: "Founder, CEO",
         achievements: [
-          <>
-            Delivered hands-on IoT and robotics training to high school and college students across multiple institutions.
-          </>,
-          <>
-           Collaborated with schools and colleges to conduct certified workshops and bootcamps.
-          </>,
-          <>
-           Led interactive, curriculum-aligned sessions covering Arduino, IoT, and robotics fundamentals with real-time demos.</>
+          <>Delivered hands-on IoT and robotics training to high school and college students across multiple institutions.</>,
+          <>Collaborated with schools and colleges to conduct certified workshops and bootcamps.</>,
+          <>Led interactive, curriculum-aligned sessions covering Arduino, IoT, and robotics fundamentals with real-time demos.</>
         ],
         images: [],
       },
-       {
+      {
         company: "Curiosity Weekends",
         timeframe: "2024 - Present",
-        role: "Co-founder,Senior Iot Engineer",
+        role: "Co-founder, Senior IoT Engineer",
         achievements: [
-          <>
-           Enabled over 100 students to build their first IoT and robotics projects through hands-on workshops and mentorship.
-          </>,
-          <>
-           provided young innovators with space, tools, and guidance to build and develop their tech projects.
-          </>,
-          <>
-           Collaborated with schools and colleges to introduce practical tech education through workshops and project-based learning.
-          </>,
+          <>Enabled over 100 students to build their first IoT and robotics projects through hands-on workshops and mentorship.</>,
+          <>Provided young innovators with space, tools, and guidance to build and develop their tech projects.</>,
+          <>Collaborated with schools and colleges to introduce practical tech education through workshops and project-based learning.</>,
         ],
         images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
         name: "Govt. Technical Institute",
-        description: <>Studing Electronic and communication.</>,
+        description: <>Studying Electronics and Communication.</>,
       },
       {
         name: "Little Kites",
-        description: <>Studied programming,Iot.</>,
+        description: <>Studied programming, IoT.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "IoT Project Prototyping and Deployment",
+        description: <>Experienced in building and deploying IoT systems using ESP8266, sensors, actuators, and cloud platforms.</>,
+        images: [],
+      },
+      {
+        title: "C/C++ (Arduino)",
+        description: <>Skilled in developing embedded systems using C/C++ for Arduino microcontrollers.</>,
+        images: [],
+      },
+      {
+        title: "MicroPython (ESP8266)",
+        description: <>Comfortable programming ESP8266 boards using MicroPython for rapid IoT development.</>,
+        images: [],
+      },
+      {
+        title: "Blynk",
+        description: <>Able to design IoT dashboards and remote controls using Blynk for real-time interaction.</>,
+        images: [],
+      },
+      {
+        title: "Git & GitHub",
+        description: <>Proficient in version control and collaboration using Git and GitHub.</>,
+        images: [],
+      },
+      {
+        title: "VS Code & Arduino IDE",
+        description: <>Efficient in coding, debugging, and managing projects using Visual Studio Code and Arduino IDE.</>,
+        images: [],
+      },
+      {
+        title: "Local Server Setup",
+        description: <>Experienced in setting up and using local servers for IoT data collection and dashboard hosting.</>,
+        images: [],
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        description: <>Familiar with building full-stack web apps using Next.js, optimized for performance and SEO.</>,
+        images: [],
+      },
+      {
+        title: "Figma",
+        description: <>Proficient in designing UI/UX prototypes using Figma for web and mobile interfaces.</>,
+        images: [],
+      },
+      {
+        title: "Robotics",
+        description: <>Knowledgeable in robotics concepts and hands-on experience with Arduino-based robotics projects.</>,
+        images: [],
+      },
+      {
+        title: "AI & Automation",
+        description: <>Interested in exploring AI and automation technologies for IoT applications.</>,
+        images: [],
+      },
+      {
+        title: "Web Development",
+        description: <>Basic knowledge of web development concepts and technologies.</>,
+        images: [],
+      },
+      {
+        title: "Teaching & Mentoring",
+        description: <>Passionate about teaching and mentoring students in IoT and robotics.</>,
+        images: [],
+      },
+      {
+        title: "Public Speaking",
+        description: <>Experienced in delivering talks and workshops on IoT and robotics topics.</>,
+        images: [],
       },
     ],
   },
@@ -190,8 +215,6 @@ const blog = {
   label: "Blog",
   title: "Writing about ME",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work = {
@@ -199,8 +222,6 @@ const work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const gallery = {
@@ -208,8 +229,6 @@ const gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",
