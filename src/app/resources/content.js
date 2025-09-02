@@ -54,7 +54,7 @@ const home = {
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Innovative Software Engineer Driving Embedded Systems, IoT, and Emerging Tech Solutions</>,
   featured: {
-    display: true,
+    display: flase,
     title: <>Recent project: <strong className="ml-4">Tempro</strong></>,
     href: "/work/tempro",
   },
